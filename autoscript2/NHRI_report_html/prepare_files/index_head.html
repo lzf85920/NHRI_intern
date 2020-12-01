@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Automated-PiP MuSiCa report</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600">
+    <!-- https://fonts.google.com/specimen/Open+Sans -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- https://fontawesome.com/ -->
+    <link rel="stylesheet" href="css/tooplate-style.css">
+</head>
+
+<body class="tm-bg-dark">
+    <div class="adcenter">
+        <script src="http://www.mobancss.com/include/new/ggad2_728x90.js"></script>
+    </div>
+    <main class="tm-container masonry">
+        <div class="item tm-bg-white tm-block tm-block-left" data-desktop-seq-no="1" data-mobile-seq-no="1">
+            <header class="tm-block-brand">
+                <div class="tm-bg-primary-dark tm-text-white tm-block-brand-inner">
+                    <h1 class="tm-brand-name">Automated WGS reporting system for cancer - MuSiCa report </h1>
+                </div>
+                <p class="tm-hero-text">The report is automatically generated. The automated reporting system is created by 2020 DIGI+Talent/NHRI-group4 members.</p>
+            </header>
+            
+
+        </div>
+        <p class="tm-text-white">MuSiCa Mutational Signatures in Cancer (<a href="https://github.com/marcos-diazg/musica">Github</a>)</p>
+        <p class="tm-text-white">(<a href="https://doi.org/10.1186/s12859-018-2234-y">Díaz-Gay et al., BMC Bioinformatics (2018)</a>)</p>
+        <p class="tm-text-white"> It is a shiny-based web application aimed to visualize the somatic mutational profile of a series of provided samples (different formats are allowed) and to extract the contribution of the reported mutational signatures (<a href="http://dx.doi.org/10.1038/nature12477">Alexandrov L.B. et al., Nature (2013)</a>, <a href="http://cancer.sanger.ac.uk/cosmic/signatures">Catalogue Of Somatic Mutations In Cancer, COSMIC (2020)</a>) on their variation profile. It is mainly based on the MutationalPatterns R package (<a href="https://doi.org/10.1186/s13073-018-0539-0">Blokzijl et al., Genome Medicine (2018)</a>).</p>
+        <br></br>
+
+
+
+
+        <div>
+            <div class="item tm-bg-white tm-block tm-block-left" data-desktop-seq-no="1" data-mobile-seq-no="1">
+                <div class="tm-bg-primary-dark tm-text-white tm-block-brand-inner">
+                    <header>
+                        <h2 class="tm-brand-name">Mutation counts plot</h2>
+                    </header>
+
+                </div>
+                <p class="tm-hero-text">Represents the prevalence of somatic mutations in the sample, the unit is (number of mutations per megabase).<br></br><br></br></p>
+                
+
+            </div>
+
+            <div class="item" data-desktop-seq-no="2" data-mobile-seq-no="4">
+                <img src="img/mutation_counts_plot.png" alt="Image" class="tm-img-left">
+            </div>
+            <a href="tabletxt/mutation_counts_table.txt" download>
+                <p>download table here: mutation_counts_table.txt</p>
+            </a>
+        </div>
+        <div class="item tm-bg-secondary tm-text-white tm-block tm-block-wider tm-block-pad tm-block-left-2"
+            data-desktop-seq-no="3" data-mobile-seq-no="5">
+            <header>
+                <h2 class="tm-brand-name">Signatures plot/</h2>
+                <h2 class="tm-brand-name">COSMIC signatures contributions</h2>
+            </header>
+            <p class="tm-text-white tm-hero-text">
+                Compare with the known mutation signatures in the <a href="tabletxt/COSMIC_sign_contributions.txt" download>Catalog of Somatic Mutations in Cancer
+                </a>(the table also included), and list the similar mutation signatures in the sample.
+            </p>
+            
+        </div>
+        <div class="item" data-desktop-seq-no="4" data-mobile-seq-no="8">
+            <img src="img/signatures_plot.png" alt="Image" class="tm-img-left">
+        </div>
+
+
+
+        <div>
+            <div class="item tm-bg-white" data-desktop-seq-no="1" data-mobile-seq-no="1">
+                <header class="tm-block-brand">
+                    <div class="tm-bg-primary-dark tm-text-white tm-block-brand-inner">
+                        <h1 class="tm-brand-name">Profile 96 plot (Base substitution mutation spectra)</h1>
+                    </div>
+                </header>
+                <p class="tm-hero-text">A row represents a subset, there are a total of 96 possible mutation types (6 substitutions * 4 5'bases * 4 3'bases), through the reference genome (ex. hg38) trinucleotide Frequency, obtain the relative proportion of mutations in this subset of samples, and draw the individual numbers of 96 mutation types.</p>
+                
+                <div class="item" data-desktop-seq-no="8" data-mobile-seq-no="6">
+                    <img src="img/profile96.png" alt="Image">
+                </div>
+            </div>
+            <a href="tabletxt/profile96.txt" download>
+                <p>download table here: profile96.txt</p>
+            </a>
+        </div>
+
+
+
+
+        <div class="item tm-block-right" data-desktop-seq-no="7" data-mobile-seq-no="3">
+            <div class="tm-block-right-inner tm-bg-primary-light tm-text-white tm-block tm-block-wider tm-block-pad">
+                <header>
+                    <h2 class="tm-text-uppercase">
+                        Comparison with cancer signatures
+                    </h2>
+                </header>
+                <p>Comparison of the sample with the known characteristics and mutation characteristics reported in different human cancer types.</p>
+                
+                <!-- -->
+            </div>
+        </div>
+        <div class="item" data-desktop-seq-no="6" data-mobile-seq-no="2">
+            <img src="img/comparison_with_cancers.png" alt="Image">
+        </div>
+
+
+
+
+
+        <div class="item tm-block-right" data-desktop-seq-no="7" data-mobile-seq-no="3">
+            <div class="tm-block-right-inner tm-bg-primary-light tm-text-white tm-block tm-block-wider tm-block-pad">
+                <header>
+                    <h2 class="tm-text-uppercase">
+                        Reconstructed profile table
+                    </h2>
+                </header>
+                <p>The first row displays the actual tumor profile. The second row displays the profile reconstructed from the predicted mutational signatures component in the first row. The last row displays the prediction error, which is the difference between the actual profile and the reconstructed profile.
+                </p>
+                <!-- -->
+            </div>
+        </div>
+        

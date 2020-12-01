@@ -28,6 +28,7 @@ Copied from [marcos-diazg/musica gituhub](https://github.com/marcos-diazg/musica
 
 ## Mode 1: Automated script - from fastq to vcf + MuSiCa report 
 Scripts are created by 方柏翰, 楊淯元, 李祖福, 鍾國洲 
+
 README are created by 方柏翰, 楊淯元, 李祖福 
 
 Our testing platform is NCHC-Taiwania 1. The version of reference genome is hg38.  
@@ -55,7 +56,7 @@ With NCHC Taiwania-1 system, most of packages are well installed.
 
 (2) Install program: Please download our script program, change directory to `NHRI_group4/autoscript2` folder, and make all scripts excutable.  
 ```
-git clone https://github.com/lzf85920/NHRI_group4.git
+git clone https://github.com/lzf85920/NHRI_intern.git
 cd NHRI_group4/autoscript2
 chmod -R 700 *
 ```
@@ -125,7 +126,7 @@ With NCHC Taiwania-1 system, most of packages are well installed.
 
 (2) Install program: Please download our script program, change directory to `NHRI_group4/autoscript2` folder, and make all scripts excutable.  
 ```
-git clone https://github.com/lzf85920/NHRI_group4.git
+git clone https://github.com/lzf85920/NHRI_intern.git
 cd NHRI_group4/autoscript2
 chmod -R 700 *
 ```
@@ -186,7 +187,7 @@ rm *.std *.err NHRI_report_html.zip
 ```
 #### 5. QUICK tutorial - testing with files in "NHRI_group4/test_files" folder
 ```
-git clone https://github.com/lzf85920/NHRI_group4.git
+git clone https://github.com/lzf85920/NHRI_intern.git
 cd NHRI_group4/autoscript2
 chmod -R 700 *
 ./script.sh musica
